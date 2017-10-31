@@ -1,0 +1,49 @@
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript">
+$(document).ready(function(){
+    $("img").click(function(){
+        $(this).slideUp();
+    });
+});
+</script>
+        
+    </script>
+<body>
+	<div class="wrapper">
+		<nav id="navigation-icon"><a href="#navigation">Menu</a>
+		</nav>
+		<header class="header">  
+			<div id="top-banner"></div>
+			<?php 
+			$navid = "navigation-desktop";
+			include("includes/nav.php"); 
+			?>
+		</header>
+
+		<main class="content">
+			<article class="clearfix">
+				<section id="image1">
+					<div class="imageblock">
+					<p> This should theoretially disapear </p>
+						<img src="images/rome.jpg" alt="Rome" id='1'>
+						<h2>Great city of Rome</h2>
+					</div>
+				</section>
+				</div>
+			</article>
+		</main>
+		
+
+		<footer class="footer">
+		<br>
+		 <h2>AF HANNE OLSEN
+			Rejsemagasinet FERIE – Sommer 2013</h2>
+			<h3>Læs mere på apollorejser.dk</h3> 
+			<br></footer>
+		
+		<?php 
+			$navid = "navigation-mobile";
+			include("includes/nav.php"); 
+			?>
+	</div>
+</body> </html>
